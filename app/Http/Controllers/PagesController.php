@@ -13,4 +13,9 @@ class PagesController extends Controller
     		->with('name', 'Chris Jim')
     		->with('lastname', 'Egot');
     }
-}
+
+    public function profile()
+    {
+    	return view('pages.profile');
+    }
+} 

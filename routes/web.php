@@ -18,8 +18,12 @@ Route::get('/', function () {
 
 /*Route::get('/', 'PagesController@index');
 
-Auth::routes();*/
+Auth::routes();
+*/
+Route::get('profile', 'PagesController@profile')->middleware('auth');
 
-Route::get('/home', 'HomeController@index')->name('home');
+Auth::routes();
+
+Route::get('home', 'HomeController@index')->middleware('auth');
 
 Auth::routes();
