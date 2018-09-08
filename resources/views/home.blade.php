@@ -16,8 +16,8 @@
 
                     <h1>Hello {!! $name !!}</h1>
                     <h3>{!! $age !!}</h3>
-                    You are logged in! 
-
+                    {!! Auth::user()->name !!}
+                    You are logged in {!! Auth::user()->email !!}
 
         <!--             <form method="POST" action="/about">
                      <button type="submit" class="btn btn-primary">
