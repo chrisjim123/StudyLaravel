@@ -14,14 +14,16 @@
                         </div>
                     @endif
 
-                    You are logged in!
+                    <h1>Hello {!! $name !!}</h1>
+                    <h3>{!! $age !!}</h3>
+                    You are logged in! 
 
 
-                    <form method="POST" action="/about">
+        <!--             <form method="POST" action="/about">
                      <button type="submit" class="btn btn-primary">
                     about
                     </button>
-                    </form>
+                    </form> -->
                 </div>
             </div>
         </div>
