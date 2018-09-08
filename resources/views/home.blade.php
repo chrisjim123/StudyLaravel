@@ -18,10 +18,8 @@
 
 
                     <form method="POST" action="/about">
-                    {!! csrf_field() !!}
                      <button type="submit" class="btn btn-primary">
-                                    about
-                    }
+                    about
                     </button>
                     </form>
                 </div>
